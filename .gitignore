@@ -15,6 +15,9 @@
 **/test.py
 
 **/*.db
+**/*.png
+**/*.bmp
+**/*.jpg
 
 Xshell-ColorScheme-lib/
 example/

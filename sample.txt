@@ -1,0 +1,16 @@
+-rwxr-xr-x  1 pi   pi    370 Feb 17  2018 sys_backup.sh
+drwxr-xr-x  2 pi   pi   4096 Feb 17  2018 sys_config
+drwxr-xr-x  2 pi   pi   4096 Feb 17  2018 sys_mng_script
+-rwxr-xr-x  1 pi   pi    226 Feb 17  2018 temp.py
+drwxr-xr-x  6 pi   pi   4096 Sep 10 23:32 test
+drwxr-xr-x  3 pi   pi   4096 Jun 24 10:38 text_process
+drwxr-xr-x  3 pi   pi   4096 Nov 12 00:30 venus_scripts
+-rwxr-xr-x  1 pi   pi     67 Feb 17  2018 vnc_ssh_rev.sh
+-rwxr-xr-x  1 pi   pi   1719 Feb 17  2018 vnstat_DB_chk.sh
+-rwxr-xr-x  1 pi   pi   1429 Feb 17  2018 vnstat_DB_chk.sh.bak
+drwxr-xr-x  4 root root 4096 Jun 18 08:23 vps
+-rwxr-xr-x  1 pi   pi   2195 Feb 17  2018 wake_on_lan.sh
+drwxr-xr-x  3 pi   pi   4096 Nov 13 00:30 www_backup
+drwxr-xr-x  3 pi   pi   4096 Feb 25  2018 xiaoqiang_network_mon
+[ 23:58 - 192.168.31.179  ]
+pi@Mercury ~/run $ 

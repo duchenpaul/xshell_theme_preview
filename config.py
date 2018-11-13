@@ -1,3 +1,4 @@
+import os
 DB_FILE = 'xcs_data.db'
 
 XCS_LIB = r'C:\Users\chdu\Desktop\Portal\Other\xshell_theme_preview\Xshell-ColorScheme-lib'
@@ -24,5 +25,9 @@ WHITE(BOLD)
 YELLOW
 YELLOW(BOLD)
 '''
+
+# xshell_theme_preview
+FONT_FOLDER = 'fonts'
+FONT = FONT_FOLDER + os.sep + 'fixedsys.ttf'
 
 TABLE_COLONM_ORDER_LIST = [ i for i in TABLE_COLONM.split('\n') if i ]
