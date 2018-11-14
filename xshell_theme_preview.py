@@ -14,7 +14,7 @@ def query_result(fileName):
         row = db_cursor.fetchone()
         rowDict = dict(zip([c[0] for c in db_cursor.description], row))
     for i in rowDict.keys():
-        if i != 'NAME' and i != 'index':
+        if i != 'NAME' and i != 'index' and i != 'FILE_PATH':
             rowDict[i] = '#' + str(rowDict[i])
     return rowDict
 

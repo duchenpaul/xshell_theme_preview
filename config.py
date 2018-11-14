@@ -24,6 +24,7 @@ WHITE
 WHITE(BOLD)
 YELLOW
 YELLOW(BOLD)
+FILE_PATH
 '''
 
 # xshell_theme_preview

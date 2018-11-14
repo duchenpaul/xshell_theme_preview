@@ -13,6 +13,7 @@ def read_xcs(xcsFile):
     xcs_profile = toolkit_config.read_config_general(xcsFile)
     profile = xcs_profile[xcs_profile['Names']['NAME0']]
     profile['NAME'] = xcs_profile['Names']['NAME0']
+    profile['FILE_PATH'] = xcsFile
     return profile
 
 
