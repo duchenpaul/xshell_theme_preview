@@ -47,7 +47,7 @@ def preview_gen(index, NAME, BACKGROUND, BLACK, BLACK_BOLD, BLUE, BLUE_BOLD, CYA
     
     for prop, fn in filelist:
         propcolor = TEXT
-        if prop.startswith('p'):
+        if prop.startswith('d'):
             fncolor=GREEN_BOLD
         else:
             fncolor=BLUE_BOLD
