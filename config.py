@@ -27,7 +27,9 @@ YELLOW(BOLD)
 '''
 
 # xshell_theme_preview
-FONT_FOLDER = 'fonts'
-FONT = FONT_FOLDER + os.sep + 'fixedsys.ttf'
+FONT_PATH = 'fonts'
+# FONT = FONT_PATH + os.sep + 'fixedsys.ttf'
+FONT = FONT_PATH + os.sep + 'DejaVuSansMono.ttf'
 
+PREVIEW_PATH = 'preview' + os.sep
 TABLE_COLONM_ORDER_LIST = [ i for i in TABLE_COLONM.split('\n') if i ]

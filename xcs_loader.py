@@ -28,7 +28,7 @@ def load_xcs(profileList):
     # print(profileDataframe)
     conn = sqlite3.connect(config.DB_FILE)
     profileDataframe.to_sql(name=tableName, if_exists='replace',
-                            con=conn, index=False)
+                            con=conn, index=True)
 
 
 if __name__ == '__main__':
