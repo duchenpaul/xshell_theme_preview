@@ -19,7 +19,7 @@ def query_result(fileName):
     return rowDict
 
 
-def preview_gen(index, NAME, BACKGROUND, BLACK, BLACK_BOLD, BLUE, BLUE_BOLD, CYAN, CYAN_BOLD, GREEN, GREEN_BOLD, MAGENTA, MAGENTA_BOLD, RED, RED_BOLD, TEXT, TEXT_BOLD, WHITE, WHITE_BOLD, YELLOW, YELLOW_BOLD):
+def preview_gen(index, NAME, BACKGROUND, BLACK, BLACK_BOLD, BLUE, BLUE_BOLD, CYAN, CYAN_BOLD, GREEN, GREEN_BOLD, MAGENTA, MAGENTA_BOLD, RED, RED_BOLD, TEXT, TEXT_BOLD, WHITE, WHITE_BOLD, YELLOW, YELLOW_BOLD, FILE_PATH):
     img = Image.new('RGB', (1090, 380), ImageColor.getrgb(BACKGROUND))
     draw = ImageDraw.Draw(img)
     # font = ImageFont.truetype(<font-file>, <font-size>)
