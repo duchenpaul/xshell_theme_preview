@@ -23,7 +23,7 @@ def preview_gen(index, NAME, BACKGROUND, BLACK, BLACK_BOLD, BLUE, BLUE_BOLD, CYA
     img = Image.new('RGB', (1090, 380), ImageColor.getrgb(BACKGROUND))
     draw = ImageDraw.Draw(img)
     # font = ImageFont.truetype(<font-file>, <font-size>)
-    font = ImageFont.truetype(config.FONT, 15)
+    font = ImageFont.truetype(config.FONT, config.FONT_SIZE)
     # draw.text((x, y),"Sample Text",(r,g,b))
     # text = open('sample.txt').read()
 

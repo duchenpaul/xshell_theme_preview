@@ -34,6 +34,7 @@ FILE_PATH
 FONT_PATH = 'fonts'
 # FONT = FONT_PATH + os.sep + 'fixedsys.ttf'
 FONT = FONT_PATH + os.sep + 'DejaVuSansMono.ttf'
+FONT_SIZE = 15
 
 PREVIEW_PATH = 'preview' + os.sep
 TABLE_COLONM_ORDER_LIST = [ i for i in TABLE_COLONM.split('\n') if i ]
