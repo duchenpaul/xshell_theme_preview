@@ -1,5 +1,5 @@
 # xshell_theme_preview
-
+![](https://img.shields.io/badge/Python-3.6.3-green.svg)
 Generate preview picture from xcs files. https://github.com/netsarang/Xshell-ColorScheme
 
 ## File
