@@ -22,3 +22,5 @@ NAME, NULL as is_fav from xcs_profile
 6. Run `selected_pickup.py` to copy all selected color schema into `selected` folder
 7. Run `xcs_generator.py` to generate parsed xcs files as `export_selected.xcs`
 8. Import `export_selected.xcs` to Xshell
+
+![](screenshot.png)

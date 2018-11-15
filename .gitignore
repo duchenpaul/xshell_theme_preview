@@ -19,6 +19,8 @@
 **/*.bmp
 **/*.jpg
 
+!screenshot.png
+
 Xshell-ColorScheme-lib/
 example/
 preview/
