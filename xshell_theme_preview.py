@@ -100,5 +100,8 @@ if __name__ == '__main__':
         query_sql = '''SELECT NAME FROM {tablename};'''.format(tablename=config.TABLE_NAME)
         nameList = [i[0] for i in db.query(query_sql)]
     for i in nameList:
+        print('Drawing ' + i)
         result = query_result(i)
         preview_gen(**result)
+
+    print('Finished drawing, check the folder ' + config.PREVIEW_PATH)
