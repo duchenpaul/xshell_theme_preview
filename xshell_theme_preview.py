@@ -91,6 +91,12 @@ def cursor_rightshift(img, cursor_loc, text, font):
     cursor_loc[0] += draw.textsize(text, font=font)[0]
     return cursor_loc
 
+def preview_gen_batch(i):
+    print('Drawing ' + i)
+    result = query_result(i)
+    preview_gen(**result)
+
+
 if __name__ == '__main__':
     fileName = 'Belafonte Day'
     # result = query_result(fileName)
@@ -99,9 +105,13 @@ if __name__ == '__main__':
     with toolkit_sqlite.SqliteDB(config.DB_FILE) as db:
         query_sql = '''SELECT NAME FROM {tablename};'''.format(tablename=config.TABLE_NAME)
         nameList = [i[0] for i in db.query(query_sql)]
-    for i in nameList:
-        print('Drawing ' + i)
-        result = query_result(i)
-        preview_gen(**result)
+    # for i in nameList:
+    #     print('Drawing ' + i)
+    #     result = query_result(i)
+    #     preview_gen(**result)
 
+    # Use all cores to finish the job
+    import concurrent.futures
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        executor.map(preview_gen_batch, nameList)
     print('Finished drawing, check the folder ' + config.PREVIEW_PATH)
